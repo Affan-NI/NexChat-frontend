@@ -1,0 +1,51 @@
+/* css for login and signup page */
+.auth-container{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#0f172a;
+}
+
+.auth-form{
+    width:400px;
+    padding:30px;
+    background:#1e293b;
+    border-radius:15px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.auth-form h1{
+    color:white;
+    text-align:center;
+}
+
+.auth-form input{
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    outline:none;
+}
+
+.auth-form button{
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+}
+
+.auth-form p{
+    color:white;
+    text-align:center;
+}
+
+.auth-form a{
+    color:#38bdf8;
+    margin-left:5px;
+    text-decoration:none;
+}
