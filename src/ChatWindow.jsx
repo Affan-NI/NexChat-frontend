@@ -101,7 +101,7 @@ function ChatWindow() {
     return ( 
         <div className="chatWindow">
             <div className="navbar">
-                <span>GPT <i class="fa-solid fa-angle-down"></i></span>
+                <span>NexChat <i class="fa-solid fa-angle-down"></i></span>
                 {
                     user? <p className="signUp">Hi, {user} </p>:<Link className="signUp"to="/signup">SignUp </Link>
                 }
@@ -131,7 +131,7 @@ function ChatWindow() {
                     </input>
                     <div id="submit" onClick={getReply}><i class="fa-solid fa-paper-plane"></i></div>
                 </div>
-                <p className="info">GPT can make mistakes. Check importanat info. see cookie Preference</p>
+                <p className="info">NexChat can make mistakes. Check importanat info.</p>
             </div>
         </div>
      );

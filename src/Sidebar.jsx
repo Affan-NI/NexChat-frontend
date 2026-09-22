@@ -104,7 +104,7 @@ function Sidebar() {
 
         {/* small sign */}
         <div className="sign">
-            <p>Made by Abdullah &hearts;</p>    
+            <p>Made by AFFAN &hearts;</p>    
         </div>
        </section>
      );
