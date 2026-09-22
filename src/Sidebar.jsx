@@ -10,7 +10,7 @@ function Sidebar() {
     const getAllThreads=async()=>{
         try{
             // http://ec2-65-0-31-60.ap-south-1.compute.amazonaws.com:8080/api/thread
-            const response=await fetch("http://localhost:8080/api/thread",{
+            const response=await fetch("http://ec2-13-203-232-149.ap-south-1.compute.amazonaws.com:8080/api/thread",{
                 credentials: "include"
             });
             const res=await response.json();
@@ -44,7 +44,7 @@ function Sidebar() {
         setCurrThreadId(newThreadId);
         try{
             // http://ec2-65-0-31-60.ap-south-1.compute.amazonaws.com:8080/api/thread/
-            const response=await fetch(`http://localhost:8080/api/thread/${newThreadId}`,{
+            const response=await fetch(`http://ec2-13-203-232-149.ap-south-1.compute.amazonaws.com:8080/api/thread/${newThreadId}`,{
                 credentials: "include"
             });
             const res=await response.json();
@@ -58,7 +58,7 @@ function Sidebar() {
     const deleteThread=async(threadId)=>{
         try{
             // http://ec2-65-0-31-60.ap-south-1.compute.amazonaws.com:8080/api/thread/
-            const response=await fetch(`http://localhost:8080/api/thread/${threadId}`,{method:"DELETE",credentials: "include"});
+            const response=await fetch(`http://ec2-13-203-232-149.ap-south-1.compute.amazonaws.com:8080/api/thread/${threadId}`,{method:"DELETE",credentials: "include"});
             const res=await response.json();
             console.log(res);
             setAllThreads(prev=>prev.filter(thread=>thread.threadId!==threadId));

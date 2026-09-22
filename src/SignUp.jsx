@@ -20,7 +20,7 @@ function Signup() {
 
             const res = await axios.post(
                 // "http://ec2-65-0-31-60.ap-south-1.compute.amazonaws.com:8080/api/auth/signup",
-                "http://localhost:8080/api/auth/signup",
+                "http://ec2-13-203-232-149.ap-south-1.compute.amazonaws.com:8080/api/auth/signup",
                 {
                     name,
                     email,
